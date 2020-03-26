@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/krisblog/static/css/main.5f361e03.chunk.css",
+    "main.js": "/krisblog/static/js/main.9e9ed4d9.chunk.js",
+    "main.js.map": "/krisblog/static/js/main.9e9ed4d9.chunk.js.map",
+    "runtime-main.js": "/krisblog/static/js/runtime-main.043e7c67.js",
+    "runtime-main.js.map": "/krisblog/static/js/runtime-main.043e7c67.js.map",
+    "static/js/2.af1e001d.chunk.js": "/krisblog/static/js/2.af1e001d.chunk.js",
+    "static/js/2.af1e001d.chunk.js.map": "/krisblog/static/js/2.af1e001d.chunk.js.map",
+    "index.html": "/krisblog/index.html",
+    "precache-manifest.9267d2c2771638435786a4758e7c2935.js": "/krisblog/precache-manifest.9267d2c2771638435786a4758e7c2935.js",
+    "service-worker.js": "/krisblog/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/krisblog/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.af1e001d.chunk.js.LICENSE.txt": "/krisblog/static/js/2.af1e001d.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/krisblog/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.043e7c67.js",
+    "static/js/2.af1e001d.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.9e9ed4d9.chunk.js"
+  ]
+}
