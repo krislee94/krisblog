@@ -1,0 +1,45 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@krislee94 
+ruanyf
+/
+github-actions-demo
+2
+63 70
+ Code  Issues 0  Pull requests 1  Actions  Projects 0  Wiki  Security  Insights
+github-actions-demo/.github/workflows/ci.yml
+@ruanyf ruanyf feat: upgrade action version. fixed #3
+71694fe on 16 Feb
+23 lines (23 sloc)  661 Bytes
+    
+name: GitHub Actions Build and Deploy Demo
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+      with:
+        persist-credentials: false
+    - name: Install and Build
+      run: |
+        npm install
+        npm run-script build
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build
+
