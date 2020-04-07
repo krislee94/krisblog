@@ -1,12 +1,14 @@
 import styled from 'styled-components'
 
 const border = ({
+      // @ts-ignore
       component = null,
       width = '1px',
       style = 'solid',
       color = '#e4e4e4',
       radius = 0
 }) => {
+      // @ts-ignore
       return styled()
       `
     position: relative;
