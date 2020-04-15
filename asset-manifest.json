@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/krisblog/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/krisblog/static/js/main.3a3164b9.chunk.js",
-    "main.js.map": "/krisblog/static/js/main.3a3164b9.chunk.js.map",
-    "runtime-main.js": "/krisblog/static/js/runtime-main.31363a96.js",
-    "runtime-main.js.map": "/krisblog/static/js/runtime-main.31363a96.js.map",
-    "static/js/2.bb0f16f3.chunk.js": "/krisblog/static/js/2.bb0f16f3.chunk.js",
-    "static/js/2.bb0f16f3.chunk.js.map": "/krisblog/static/js/2.bb0f16f3.chunk.js.map",
+    "main.js": "/krisblog/static/js/main.b02b0950.chunk.js",
+    "main.js.map": "/krisblog/static/js/main.b02b0950.chunk.js.map",
+    "runtime-main.js": "/krisblog/static/js/runtime-main.9859d9a7.js",
+    "runtime-main.js.map": "/krisblog/static/js/runtime-main.9859d9a7.js.map",
+    "static/js/2.4fb9423f.chunk.js": "/krisblog/static/js/2.4fb9423f.chunk.js",
+    "static/js/2.4fb9423f.chunk.js.map": "/krisblog/static/js/2.4fb9423f.chunk.js.map",
     "index.html": "/krisblog/index.html",
-    "precache-manifest.76347487c6549905797cd31d56fa0314.js": "/krisblog/precache-manifest.76347487c6549905797cd31d56fa0314.js",
+    "precache-manifest.3f3f2a3d064e951ceeda6d40e24766df.js": "/krisblog/precache-manifest.3f3f2a3d064e951ceeda6d40e24766df.js",
     "service-worker.js": "/krisblog/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/krisblog/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.bb0f16f3.chunk.js.LICENSE.txt": "/krisblog/static/js/2.bb0f16f3.chunk.js.LICENSE.txt"
+    "static/js/2.4fb9423f.chunk.js.LICENSE.txt": "/krisblog/static/js/2.4fb9423f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.31363a96.js",
-    "static/js/2.bb0f16f3.chunk.js",
+    "static/js/runtime-main.9859d9a7.js",
+    "static/js/2.4fb9423f.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.3a3164b9.chunk.js"
+    "static/js/main.b02b0950.chunk.js"
   ]
 }
