@@ -15,6 +15,15 @@
 - [配置tsconfig.json](https://www.tslang.cn/docs/handbook/tsconfig-json.html)
 
 - 
+### 在react项目中使用redux
+
+- `yarn add @types/redux @types/react-redux immer --save`
+
+- 这里使用immer替代immutable,为的是之后使用redux的reducer的方便。immutable不太好用 - -。
+
+
+
+
 
 
 
@@ -27,7 +36,77 @@
 
 ### 加载使用webpack
 
-#### 手动生成一个简易得webpack
+**（使用一些插件来处理，这里暂未用到）**
+```
+const path = require("path");
+const webpack = require('webpack');
+// const styleComponentPlugins = require('babel-plugin-styled-components');
+module.exports = {
+  entry: "./src/index.js",
+  output: {
+    path: path.join(__dirname, "dist"),
+    filename: "bundle.js"
+  },
+  devtool: "source-map",
+  resolve: {
+    modules: [path.resolve(__dirname, 'src/web_modules'), 'node_modules'],
+    extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+    },
+  mode: "production",
+  module:{
+      rules:[
+          {
+              test:/.tsx?$/,
+              use:'awesome-typescript-loader',
+          },
+          {
+            test:/.js$/,
+            use:'babel-loader'
+          },
+          {
+              test: /.css$/,
+              use:[
+                  'style-loader',
+                  'css-loader',
+              ]
+          },
+          {
+              test:/.less$/,
+              use:[
+                'style-loader',
+                'css-loader',
+                'less-loader',
+              ]
+          },
+          {
+              test:/.(png|jpg|gif|jpeg)$/,
+              use:[
+                  {
+                      loader:'url-loader',
+                      options:{
+                          limit:10240
+                      }
+                  }
+              ]
+          },
+          {
+            test:/.(woff|woff2|eot|ttf|otf)$/,
+            use:'file-loader'
+          }
+      ],
+  },
+  plugins:[
+      new webpack.HotModuleReplacementPlugin(),
+  ],
+  devServer:{
+      contentBase:'./dist',
+      hot:true,
+  }
+};
+
+```
+
+#### 手动生成一个简易得webpack (以后搞)
 
 ##### 原理
 
