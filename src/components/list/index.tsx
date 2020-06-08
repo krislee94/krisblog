@@ -2,12 +2,12 @@ import React from "react";
 import { ListWrapper, ListItem, List } from "./styles";
 import {getCount} from '../../api/util';
 
-function RecommendList(props) {
+function RecommendList(props:any) {
   return (
     <ListWrapper>
       <h1 className="title"> 推荐歌单 </h1>
       <List>
-        {props.recommendList.map((item, index) => {
+        {props.recommendList.map((item:any, index:number) => {
           return (
             <ListItem key={item.id + index}>
               <div className="img_wrapper">

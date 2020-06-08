@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { SliderContainer } from "./styles";
 import "swiper/css/swiper.css";
 import Swiper from "swiper";
+import { v4 as uuidv4 } from 'uuid';
 
 interface bannerType {
   imageUrl: string;
@@ -33,7 +34,7 @@ const Slider: React.FC<SliderProps> = ({ bannerList = [] }) => {
         <div className="swiper-wrapper">
           {bannerList.map((slider) => {
             return (
-              <div className="swiper-slide" key={slider.imageUrl}>
+              <div className="swiper-slide" key={uuidv4()}>
                 <div className="slider-nav">
                   <img
                     src={slider.imageUrl}

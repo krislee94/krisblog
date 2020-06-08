@@ -1,4 +1,4 @@
-export const getCount = (count) => {
+export const getCount = (count:number) => {
     if (count < 0) return;
     if (count < 10000) {
       return count;
