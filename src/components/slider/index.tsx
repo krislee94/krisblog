@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { SliderContainer } from "./styles";
 import "swiper/css/swiper.css";
 import Swiper from "swiper";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 interface bannerType {
   imageUrl: string;
@@ -15,7 +15,7 @@ interface SliderProps {
 
 const Slider: React.FC<SliderProps> = ({ bannerList = [] }) => {
   const [sliderSwiper, setSliderSwiper] = useState<Swiper>();
-
+  console.log(bannerList);
   useEffect(() => {
     if (bannerList.length && !sliderSwiper) {
       let sliderSwiper = new Swiper(".slider-container", {

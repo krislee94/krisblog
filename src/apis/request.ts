@@ -4,3 +4,9 @@ import { axiosInstance } from "./config";
 export const getHomeRequest = () => {
   return axiosInstance.get("/");
 };
+
+export const getBannerRequest = () => {
+  return axiosInstance.post("/banner", {
+    type: 0,
+  });
+};

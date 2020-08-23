@@ -2,6 +2,9 @@ import * as actionTypes from "./constants";
 import produce from "immer";
 import { RecommendStateType } from "./data.d";
 
+/**
+ * 初始化state在reducer中进行
+ */
 const defaultState: RecommendStateType = {
   bannerList: [],
   recommendList: [],
