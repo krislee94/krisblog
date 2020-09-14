@@ -50,7 +50,7 @@ export const changeEnterLoading = (data: boolean): changeEnterLoadingType => ({
 export const getBannerList = () => {
   return (dispatch: any) => {
     request({
-      url: "/banner",
+      url: "/api/banner",
     })
       .then((data: any) => {
         const action = changeBannerList(data.banners);

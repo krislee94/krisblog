@@ -56,9 +56,5 @@ module.exports = {
     open: true, // 自动打开页面
     historyApiFallback: true,
     port: 3000,
-    proxy: {
-      target: "http://api.krislee-vip.com",
-      changeOrigin: true,
-    },
   },
 };
